@@ -1,0 +1,11 @@
+count = input("Введите любые значения списка через пробел ") .split()
+#count = (count.split())
+i = [0]
+for i in range(int(len(count) / 2)):
+    count[i], count[i + 1] = count[i + 1], count[i]
+    i += 2
+
+print(count)
+
+#не могу понять, почему на трех значениях работает, а больше нет?
+
