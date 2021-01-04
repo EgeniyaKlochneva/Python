@@ -1,0 +1,9 @@
+def my_del():
+    try:
+        a = float(input("Введите переменную a-"))
+        b = float(input("Введите переменную b-"))
+        return a / b
+    except ZeroDivisionError:
+        return
+
+print(my_del())
