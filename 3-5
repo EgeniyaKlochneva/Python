@@ -1,0 +1,19 @@
+def string_of_numbers():
+    """Данная функция выполняет суммирование чисел, введенных пользователем через пробел.
+    Ввод чисел можно продолжать даже после получение итога суммирования. Выход осуществляется введением символа '*'"""
+    result = 0
+    while True:
+        numbers = input('Введите число через пробел или * для выхода: ').split()
+        for i in numbers:
+            try:
+                if i == '*':
+                    print(f'Сумма чисел= {result}. Завершение')
+                    return
+                else:
+                    result += int(i)
+            except ValueError:
+                print('Введите число или *')
+        print(f'Сумма чисел= {result}')
+
+
+print(string_of_numbers())

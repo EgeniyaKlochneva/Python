@@ -1,0 +1,9 @@
+def my_del(a, b):
+    return a / b
+a = float(input("Введите переменную a-"))
+b = float(input("Введите переменную b-"))
+if b == 0:
+    print("На ноль делить нельзя!!!")
+    b = int(input("Введите переменную b-"))
+
+print(my_del(a, b))

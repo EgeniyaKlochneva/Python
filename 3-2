@@ -1,0 +1,11 @@
+def user_data(**kwargs):
+    return list(kwargs.values())
+
+print(user_data
+      (name=input('Ваше имя: '),
+       s_name=input('Ваша фамилия: '),
+       y_birdh=input('Год вашего рождения: '),
+       city=input('Город проживания: '),
+       email=input('Ваш email : '),
+       tel=input('Номер вашего телефона: '))
+      )

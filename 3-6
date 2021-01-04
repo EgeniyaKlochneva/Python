@@ -1,0 +1,10 @@
+def from_small_to_large_letters(text):
+    """Данная функция выполняет преобразование букв прописных в буквы заглавные. И слов, написанных с
+    маленькой буквы в слова, написанные с заглавной буквы"""
+    sl = []
+    for i in range(len(text)):
+        sl.append(text[i][0:1].title() + text[i][1:])
+    return ' '.join(sl)
+
+
+print(from_small_to_large_letters(input('Введите текст с маленькой буквы: ').split()))
