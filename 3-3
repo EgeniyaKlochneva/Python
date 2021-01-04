@@ -1,0 +1,7 @@
+def my_func(a, b, c):
+    k = [a, b, c]
+    k.remove(min(a, b, c))
+    return sum(k)
+
+
+print(my_func(8, 4, 8))
